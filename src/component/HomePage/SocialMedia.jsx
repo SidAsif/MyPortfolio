@@ -39,7 +39,7 @@ const SocialMedia = () => {
           className="bg-[#F3F1FB]  flex-[2] rounded-3xl mb-6 md:mb-0 overflow-hidden"
         >
           <iframe
-            src="public/myresume.pdf#toolbar=0&navpanes=0&scrollbar=0"
+            src="/myresume.pdf#toolbar=0&navpanes=0&scrollbar=0"
             className="w-full h-[350px]"
           ></iframe>
         </motion.div>
