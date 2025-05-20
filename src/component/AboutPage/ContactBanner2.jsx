@@ -53,6 +53,7 @@ const ContactBanner2 = () => {
               <img
                 src="/Home/email_icon.png"
                 alt="Email Icon"
+                loading="lazy"
                 className="w-6 h-4 object-cover mr-2"
               />
               <a
@@ -68,6 +69,7 @@ const ContactBanner2 = () => {
               <img
                 src="/Home/telephone_icon.png"
                 alt="Phone Icon"
+                loading="lazy"
                 className="w-6 h-6 object-cover mr-2"
               />
               <a

@@ -6,6 +6,7 @@
   src: url("/assets/fonts/Webfont/THICCCBOI-Regular.woff2") format("woff2"),
        url("/assets/fonts/TTF/THICCCBOI-Regular.ttf") format("truetype");
   font-weight: 400;
+   font-display: swap;
   font-style: normal;
 }
 
@@ -14,5 +15,6 @@
   src: url("/assets/fonts/Webfont/Thicccboi-Bold.woff2") format("woff2"),
        url("/assets/fonts/TTF/Thicccboi-Bold.woff") format("woff");
   font-weight: 700;
+   font-display: swap;
   font-style: normal;
 }

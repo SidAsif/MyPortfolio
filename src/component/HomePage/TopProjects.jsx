@@ -76,13 +76,19 @@ const TopProjects = () => {
           >
             <div className="flex items-center justify-between mb-4">
               {/* Left Image */}
-              <img src={project.leftImg} alt="logo" className="w-8 h-8" />
+              <img
+                src={project.leftImg}
+                alt="logo"
+                loading="lazy"
+                className="w-8 h-8"
+              />
 
               {/* Right Button */}
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <button className="bg-white p-2 rounded-md">
                   <img
                     src="/Home/arrow.svg"
+                    loading="lazy"
                     alt="arrow"
                     className="w-5 h-5 object-cover hover:scale-75 transition duration-300"
                   />
@@ -103,6 +109,7 @@ const TopProjects = () => {
             <div className="flex justify-center min-w-[320px] md:min-w-[270px]">
               <img
                 src={project.mainImg}
+                loading="lazy"
                 alt={`${project.name} main`}
                 className="h-full object-contain rounded-md"
               />

@@ -159,15 +159,17 @@ const Experience = () => {
                 <p>Send me a message!</p>
               </div>
               <div>
-                <button className="bg-white p-2 rounded-md">
-                  <Link to="/contact">
-                    <img
-                      src="/Home/arrow.svg"
-                      alt=""
-                      className="w-5 h-5 object-cover"
-                    />
-                  </Link>
-                </button>
+                <Link
+                  to="/contact"
+                  aria-label="Go to Contact page"
+                  className="bg-white p-2 rounded-md inline-flex items-center justify-center"
+                >
+                  <img
+                    src="/Home/arrow.svg"
+                    alt="Arrow Icon"
+                    className="w-5 h-5 object-cover"
+                  />
+                </Link>
               </div>
             </div>
           </motion.div>

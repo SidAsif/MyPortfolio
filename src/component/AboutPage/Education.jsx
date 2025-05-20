@@ -65,6 +65,7 @@ const Education = () => {
               <img
                 src="/Home/userAvatar.png"
                 alt="Profile"
+                loading="lazy"
                 className="w-10 h-10 rounded-full object-contain"
               />
             </div>
@@ -94,6 +95,7 @@ const Education = () => {
                 <img
                   src={education.imgSrc}
                   alt="Education"
+                  loading="lazy"
                   className="w-10 h-10 object-cover rounded-md mr-5"
                 />
                 <div>

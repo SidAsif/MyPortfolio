@@ -2,7 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
 const Intro = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.4 });
@@ -79,6 +79,15 @@ const Intro = () => {
         </motion.div>
 
         {/* Second box */}
+        <Helmet>
+          <link
+            rel="preload"
+            as="image"
+            href="/Home/userProfile2.jpg"
+            type="image/jpeg"
+          />
+        </Helmet>
+
         <motion.div className="flex-1" variants={boxVariant}>
           <img
             src="/Home/userProfile2.jpg"

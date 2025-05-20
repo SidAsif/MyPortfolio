@@ -45,6 +45,7 @@ const MainProject = () => {
           <img
             src="/Project/Screenshot 2025-04-27 100145.png"
             alt="Sample"
+            loading="lazy"
             className="w-full h-full object-cover rounded-3xl"
           />
         </motion.div>
@@ -65,6 +66,7 @@ const MainProject = () => {
                 <img
                   src="/Home/arrow.svg"
                   alt="arrow"
+                  loading="lazy"
                   className="w-5 h-5 md:w-6 md:h-6 object-cover hover:scale-75 transition duration-300 "
                 />
               </button>
@@ -76,6 +78,7 @@ const MainProject = () => {
               <img
                 src="/Project/webicon.png"
                 alt="small image"
+                loading="lazy"
                 className="w-10 h-10 mb-3"
               />
             </div>

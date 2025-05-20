@@ -40,7 +40,8 @@ const SocialMedia = () => {
         >
           <iframe
             src="/myresume.pdf#toolbar=0&navpanes=0&scrollbar=0"
-            className="w-full h-[350px]"
+            title="Resume PDF"
+            className="w-full h-[350px] rounded-lg"
           ></iframe>
         </motion.div>
 
@@ -63,6 +64,7 @@ const SocialMedia = () => {
               <div className="bg-[#F3F1FB]  rounded-3xl md:h-[162px]">
                 <img
                   src="/Home/Insta.png"
+                  loading="lazy"
                   alt="Image 1"
                   className="w-full h-full object-cover rounded-3xl hover:scale-105 transition duration-300"
                 />
@@ -80,6 +82,7 @@ const SocialMedia = () => {
                 <img
                   src="/Home/whatsapp.png"
                   alt="WhatsApp"
+                  loading="lazy"
                   className="w-full h-full object-cover rounded-3xl hover:scale-105 transition duration-300"
                 />
               </div>
@@ -96,6 +99,7 @@ const SocialMedia = () => {
                 <img
                   src="/Home/LinkedIn_logo.png"
                   alt="Image 2"
+                  loading="lazy"
                   className="w-full h-full object-cover rounded-3xl  hover:scale-105 transition duration-300"
                 />
               </div>
@@ -112,6 +116,7 @@ const SocialMedia = () => {
                 <img
                   src="/Home/github.png"
                   alt="Image 3"
+                  loading="lazy"
                   className="w-full h-full object-cover rounded-3xl  hover:scale-105 transition duration-300"
                 />
               </div>

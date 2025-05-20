@@ -95,6 +95,7 @@ const MyExperience = () => {
                 <img
                   src={exp.image}
                   alt={exp.company}
+                  loading="lazy"
                   className="mr-4 w-10 h-10"
                 />
                 <div>
@@ -134,7 +135,12 @@ const MyExperience = () => {
             {skills.map((skill, index) => (
               <div key={index} className="mb-4">
                 <div className="flex mb-4">
-                  <img src={skill.img} alt="icon" className="mr-4 w-7 h-7" />
+                  <img
+                    src={skill.img}
+                    alt="icon"
+                    loading="lazy"
+                    className="mr-4 w-7 h-7"
+                  />
                   <p className="text-sm font-normal text-[#616161]">
                     {skill.name}
                   </p>
