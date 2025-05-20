@@ -1,7 +1,9 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-
+import { useRef } from "react";
+import emailjs from "emailjs-com";
+import toast, { Toaster } from "react-hot-toast";
 const ContactForm = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
@@ -60,9 +62,42 @@ const ContactForm = () => {
       },
     },
   };
+  const formRef = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const email = formRef.current.email.value;
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        "service_esc0stb",
+        "template_t3m67qd",
+        formRef.current,
+        "jVupPFX0R-v8YbNnl"
+      )
+      .then(
+        (result) => {
+          toast.success(
+            "Thanks for your message! I will get back to you soon."
+          );
+          formRef.current.reset();
+        },
+        (error) => {
+          toast.error("Failed to send the message. ");
+        }
+      );
+  };
   return (
     <div ref={ref} className="max-w-[980px] mx-auto px-6 pt-6 pb-28">
+      <Toaster />
       <motion.div
         className="flex flex-col md:flex-row gap-6"
         initial="hidden"
@@ -164,16 +199,18 @@ const ContactForm = () => {
           className="p-5 md:p-10 bg-[#F3F1FB]  flex-1 rounded-3xl"
           variants={boxVariant}
         >
-          <form className="space-y-4">
+          <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
             <div className="flex flex-col md:flex-row gap-4 pb-3">
               <div className="flex-1">
                 <label className="block text-sm font-semibold text-black mb-1">
                   Name
                 </label>
                 <input
-                  type="text "
+                  type="text"
+                  name="name"
                   className="mt-1 w-full py-3 px-4 text-sm rounded-3xl text-[#333]"
                   placeholder="John Doe"
+                  required
                 />
               </div>
               <div className="flex-1">
@@ -182,8 +219,10 @@ const ContactForm = () => {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   className="mt-1 w-full py-3 px-4 text-sm text-[#333] rounded-3xl"
                   placeholder="example@gmail.com"
+                  required
                 />
               </div>
             </div>
@@ -195,8 +234,10 @@ const ContactForm = () => {
                 </label>
                 <input
                   type="tel"
+                  name="phone"
                   className="mt-1 w-full py-3 px-4 text-sm text-[#333] rounded-3xl"
                   placeholder="86XXXXXX"
+                  required
                 />
               </div>
               <div className="flex-1">
@@ -205,8 +246,10 @@ const ContactForm = () => {
                 </label>
                 <input
                   type="text"
+                  name="subject"
                   className="mt-1 w-full py-3 px-4 text-sm text-[#333] rounded-3xl "
                   placeholder="ex.Design project"
+                  required
                 />
               </div>
             </div>
@@ -216,9 +259,11 @@ const ContactForm = () => {
                 Leave me a message
               </label>
               <textarea
+                name="message"
                 className="mt-1 w-full py-4 px-4 rounded-3xl text-[#333]"
                 rows="4"
                 placeholder="Please write your message..."
+                required
               ></textarea>
             </div>
 
