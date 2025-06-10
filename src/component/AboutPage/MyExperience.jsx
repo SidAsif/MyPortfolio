@@ -17,7 +17,7 @@ const experiences = [
     description:
       "Worked on frontend development while also contributing to UI/UX design to improve user experience and interface consistency across the platform.",
 
-    duration: "May 2024 - May 2025",
+    duration: "July 2024 - Jun 2025",
     image: "/Home/smartml.jpg",
   },
   {

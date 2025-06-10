@@ -13,7 +13,7 @@ const experiences = [
   {
     company: " SmartML Labs",
     position: "Frontend Developer Intern",
-    duration: "May 2024 - May 2025",
+    duration: "July 2024 - Jun 2025",
     image: "/Home/smartml.jpg",
   },
   {
