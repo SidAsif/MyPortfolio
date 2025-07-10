@@ -86,7 +86,7 @@ const MainProject = () => {
               UniFinder - Your Ultimate Campus Companion
             </h2>
             <p className="text-gray-600 text-sm md:text-base">
-              Machine Learning<span className="px-2">-</span> May 2020
+              Interactive Web Project<span className="px-2">-</span> May 2020
             </p>
           </div>
         </motion.div>

@@ -101,7 +101,7 @@ const TopProjects = () => {
                 {project.name}
               </p>
               <p className="text-sm text-gray-600">
-                Product Design <span className="px-2">-</span> {project.year}
+                Modern Web UI <span className="px-2">-</span> {project.year}
               </p>
             </div>
 
