@@ -34,9 +34,9 @@ const Project1 = () => {
       variants={divVariants}
     >
       {/* Container */}
-      <div className="flex flex-col md:flex-row gap-6">
+      <div className="flex flex-col gap-6 md:flex-row">
         {/* Content */}
-        <div className="flex-1 relative px-6 pt-6 order-1 md:order-2">
+        <div className="relative flex-1 order-1 px-6 pt-6 md:order-2">
           {/*add project link here*/}
           <a
             href="https://unifinderr.netlify.app/"
@@ -44,11 +44,11 @@ const Project1 = () => {
             rel="noopener noreferrer"
           >
             <div className="absolute top-5 right-5">
-              <button className="bg-white p-2 md:p-3 rounded-md md:rounded-xl">
+              <button className="p-2 bg-white rounded-md md:p-3 md:rounded-xl">
                 <img
                   src="/Home/arrow.svg"
                   alt="arrow"
-                  className="w-5 h-5 md:w-6 md:h-6 object-cover hover:scale-75 transition duration-300"
+                  className="object-cover w-5 h-5 transition duration-300 md:w-6 md:h-6 hover:scale-75"
                 />
               </button>
             </div>
@@ -64,13 +64,13 @@ const Project1 = () => {
             <h2 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4 max-w-[400px]">
               UniFinder - Your Ultimate Campus Companion
             </h2>
-            <p className="text-gray-600 mb-4 text-sm">
+            <p className="mb-4 text-sm text-gray-600">
               A web app aiding users in exploring nearby amenities and services
               around the Integral University campus. From top eateries to nearby
               hostels, it's your one-stop platform for essential local
               information.
             </p>
-            <p className="text-gray-600 text-sm ">
+            <p className="text-sm text-gray-600 ">
               Full Stack<span className="px-2">-</span> May 2024
             </p>
           </div>
