@@ -13,7 +13,7 @@ const experiences = [
   {
     company: " SmartML Labs",
     position: "Frontend Developer Intern",
-    duration: "July 2024 - Jun 2025",
+    duration: "July 2024 - Aug 2025",
     image: "/Home/smartml.jpg",
   },
   {
@@ -70,7 +70,7 @@ const Experience = () => {
     <div ref={ref} className="max-w-[980px] mx-auto px-6">
       {/* Container  */}
       <motion.div
-        className="flex flex-col md:flex-row gap-6"
+        className="flex flex-col gap-6 md:flex-row"
         initial="hidden"
         animate={controls}
         variants={boxVariant}
@@ -80,7 +80,7 @@ const Experience = () => {
           className="p-5 md:p-10 bg-[#F3F1FB]  flex-1 rounded-3xl"
           variants={boxVariant}
         >
-          <h1 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">
+          <h1 className="mb-4 text-xl font-bold md:text-2xl md:mb-6">
             My Experiences
           </h1>
           {experiences.map((exp, index) => (
@@ -91,7 +91,7 @@ const Experience = () => {
                 <img
                   src={exp.image}
                   alt={exp.company}
-                  className="mr-4 w-12 h-12"
+                  className="w-12 h-12 mr-4"
                 />
 
                 {/* Right Side */}
@@ -100,7 +100,7 @@ const Experience = () => {
                   <p className="font-semibold">{exp.company}</p>
 
                   {/* Position + Duration */}
-                  <div className="flex justify-between items-center">
+                  <div className="flex items-center justify-between">
                     <p className="text-sm font-normal text-[#616161]">
                       {exp.position}
                     </p>
@@ -112,19 +112,19 @@ const Experience = () => {
               </div>
 
               {index < experiences.length - 1 && (
-                <hr className="border-t-2 border-gray-300 my-6" />
+                <hr className="my-6 border-t-2 border-gray-300" />
               )}
             </div>
           ))}
         </motion.div>
 
         {/* Second box */}
-        <div className="flex flex-col gap-6 flex-1">
+        <div className="flex flex-col flex-1 gap-6">
           <motion.div
             className="p-5 md:p-10 bg-[#F3F1FB]  flex-1 rounded-3xl h-[250px] md:h-[350px]"
             variants={boxVariant}
           >
-            <h1 className="text-xl  md:text-2xl  font-bold mb-4">
+            <h1 className="mb-4 text-xl font-bold md:text-2xl">
               Tech Expertise
             </h1>
             {skills.map((skill, index) => (
@@ -137,7 +137,7 @@ const Experience = () => {
                 </div>
 
                 {index < skills.length - 1 && (
-                  <hr className="border-t-2 border-gray-300 mb-4" />
+                  <hr className="mb-4 border-t-2 border-gray-300" />
                 )}
               </div>
             ))}
@@ -152,9 +152,9 @@ const Experience = () => {
               <img
                 src="/Home/contact.png"
                 alt=""
-                className="w-8 h-12 mr-4 object-cover"
+                className="object-cover w-8 h-12 mr-4"
               />
-              <div className="flex flex-col text-lg md:text-2xl font-semibold mr-6">
+              <div className="flex flex-col mr-6 text-lg font-semibold md:text-2xl">
                 <p>Let&apos;s work together!</p>
                 <p>Send me a message!</p>
               </div>
@@ -162,12 +162,12 @@ const Experience = () => {
                 <Link
                   to="/contact"
                   aria-label="Go to Contact page"
-                  className="bg-white p-2 rounded-md inline-flex items-center justify-center"
+                  className="inline-flex items-center justify-center p-2 bg-white rounded-md"
                 >
                   <img
                     src="/Home/arrow.svg"
                     alt="Arrow Icon"
-                    className="w-5 h-5 object-cover"
+                    className="object-cover w-5 h-5"
                   />
                 </Link>
               </div>

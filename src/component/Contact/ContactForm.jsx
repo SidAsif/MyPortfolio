@@ -24,7 +24,7 @@ const ContactForm = () => {
     },
     {
       question: "How many years of experience do you have?",
-      answer: "I've currently more than 1.5 years. ⏳",
+      answer: "I've currently more than 1 year. ⏳",
     },
     {
       question: "Do you contribute to open source?",

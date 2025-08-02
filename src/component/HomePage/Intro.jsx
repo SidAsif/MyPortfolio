@@ -30,7 +30,7 @@ const Intro = () => {
     <div ref={ref} className="max-w-[980px] mx-auto px-6 pt-6">
       {/* Container */}
       <motion.div
-        className="flex flex-col md:flex-row gap-6"
+        className="flex flex-col gap-6 md:flex-row"
         initial="hidden"
         animate={controls}
         variants={boxVariant}
@@ -41,11 +41,11 @@ const Intro = () => {
           variants={boxVariant}
         >
           <div className="flex items-center mb-4">
-            <div className="relative w-14 h-14 rounded-full bg-black flex items-center justify-center mr-4">
+            <div className="relative flex items-center justify-center mr-4 bg-black rounded-full w-14 h-14">
               <img
                 src="/Home/userAvatar.png"
                 alt="Profile"
-                className="w-10 h-10 rounded-full object-contain"
+                className="object-contain w-10 h-10 rounded-full"
               />
               <span className="absolute top-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full"></span>
             </div>
@@ -60,21 +60,21 @@ const Intro = () => {
                 <img
                   src="/Home/chat.png"
                   alt="Chat Icon"
-                  className="w-4 h-4 ml-2 object-cover animate-swing origin-top"
+                  className="object-cover w-4 h-4 ml-2 origin-top animate-swing"
                 />
               </span>
             </Link>
           </div>
 
-          <h2 className="text-2xl md:text-4xl font-bold mb-4 pt-4">
+          <h2 className="pt-4 mb-4 text-2xl font-bold md:text-4xl">
             I’m Md Asif Siddiqui a Software Developer from India
           </h2>
           <p className="text-[#333] text-sm font-normal md:text-base md:font-medium leading-relaxed">
-            With over 1.5 years of hands-on experience in software development,
-            I thrive on bringing concepts to life. Whether it’s crafting
-            intuitive frontends or engineering robust backend systems, I enjoy
-            building meaningful products that focus on usability, performance,
-            and user satisfaction.
+            With over 1+ year of hands-on experience in software development, I
+            thrive on bringing concepts to life. Whether it’s crafting intuitive
+            frontends or engineering robust backend systems, I enjoy building
+            meaningful products that focus on usability, performance, and user
+            satisfaction.
           </p>
         </motion.div>
 

@@ -17,7 +17,7 @@ const experiences = [
     description:
       "Worked on frontend development while also contributing to UI/UX design to improve user experience and interface consistency across the platform.",
 
-    duration: "July 2024 - Jun 2025",
+    duration: "July 2024 - Aug 2025",
     image: "/Home/smartml.jpg",
   },
   {
@@ -76,7 +76,7 @@ const MyExperience = () => {
     <div ref={ref} className="max-w-[980px] mx-auto px-6 py-6">
       {/* Container  */}
       <motion.div
-        className="flex flex-col md:flex-row gap-6"
+        className="flex flex-col gap-6 md:flex-row"
         initial="hidden"
         animate={controls}
         variants={boxVariant}
@@ -86,7 +86,7 @@ const MyExperience = () => {
           className="p-5 md:p-14 bg-[#F3F1FB]  flex-1 rounded-3xl"
           variants={boxVariant}
         >
-          <h1 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">
+          <h1 className="mb-4 text-xl font-bold md:text-2xl md:mb-6">
             My Experiences
           </h1>
           {experiences.map((exp, index) => (
@@ -96,10 +96,10 @@ const MyExperience = () => {
                   src={exp.image}
                   alt={exp.company}
                   loading="lazy"
-                  className="mr-4 w-10 h-10"
+                  className="w-10 h-10 mr-4"
                 />
                 <div>
-                  <p className="font-semibold mb-1">{exp.company}</p>
+                  <p className="mb-1 font-semibold">{exp.company}</p>
                   <div className="flex justify-between mb-2">
                     <p className="text-sm font-normal text-[#616161] mr-9">
                       {exp.position}
@@ -117,19 +117,19 @@ const MyExperience = () => {
                 {exp.duration}
               </p>
               {index < experiences.length - 1 && (
-                <hr className="border-t-2 border-gray-300 my-6" />
+                <hr className="my-6 border-t-2 border-gray-300" />
               )}
             </div>
           ))}
         </motion.div>
 
         {/* Second box */}
-        <div className="flex flex-col gap-6 flex-1">
+        <div className="flex flex-col flex-1 gap-6">
           <motion.div
             className="p-5 md:p-10 bg-[#F3F1FB]  flex-1 rounded-3xl h-[250px] md:h-[350px]"
             variants={boxVariant}
           >
-            <h1 className="text-xl  md:text-2xl  font-bold mb-4">
+            <h1 className="mb-4 text-xl font-bold md:text-2xl">
               Tech Expertise
             </h1>
             {skills.map((skill, index) => (
@@ -147,7 +147,7 @@ const MyExperience = () => {
                 </div>
 
                 {index < skills.length - 1 && (
-                  <hr className="border-t-2 border-gray-300 mb-4" />
+                  <hr className="mb-4 border-t-2 border-gray-300" />
                 )}
               </div>
             ))}
@@ -161,24 +161,24 @@ const MyExperience = () => {
             <img
               src="/About/holding-phone.avif"
               alt="LinkedIn"
-              className="w-full h-full object-cover"
+              className="object-cover w-full h-full"
             />
 
             {/* Black overlay on hover */}
-            <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-80 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 transition-opacity duration-300 bg-black opacity-0 group-hover:opacity-80"></div>
             <a
               href="https://www.linkedin.com/in/md-asif-siddiqui-157497208/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                 <img
                   src="/About/Linkedin_Icon.png"
                   alt="LinkedIn Icon"
                   className="w-16 h-16 mb-2"
                 />
-                <p className="text-white text-2xl font-bold">Follow me on</p>
-                <p className="text-white text-2xl font-bold text-center">
+                <p className="text-2xl font-bold text-white">Follow me on</p>
+                <p className="text-2xl font-bold text-center text-white">
                   LinkedIn
                 </p>
               </div>

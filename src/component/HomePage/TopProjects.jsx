@@ -8,7 +8,7 @@ const projects = [
     name: "WorldView — Explore the World, Anytime, Anywhere",
     leftImg: "/Project/webicon.png",
     mainImg: "/Project/worlview.png",
-    year: 2025,
+    year: 2024,
     link: "https://theworldviews.netlify.app/",
   },
   {
@@ -21,10 +21,10 @@ const projects = [
   },
   {
     id: 3,
-    name: "FlappyBird - Tap, Fly, and Score!",
+    name: "TailwindSight – Visual Utility Editor",
     leftImg: "/Project/webicon.png",
-    mainImg: "/Project/flappy.gif",
-    year: 2024,
+    mainImg: "/Project/TailwindSight.png",
+    year: 2025,
     link: "https://sidasif.github.io/Flappy_bird/",
   },
 ];
