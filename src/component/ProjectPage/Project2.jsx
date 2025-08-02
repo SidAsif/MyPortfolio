@@ -34,8 +34,8 @@ const Project2 = () => {
       variants={divVariants}
     >
       {/* Container */}
-      <div className="flex flex-col md:flex-row gap-6">
-        <div className="flex-1 relative px-8 pt-6">
+      <div className="flex flex-col gap-6 md:flex-row">
+        <div className="relative flex-1 px-8 pt-6">
           {/*add project link here*/}
 
           <a
@@ -44,11 +44,11 @@ const Project2 = () => {
             rel="noopener noreferrer"
           >
             <div className="absolute top-5 right-5">
-              <button className="bg-white p-2 md:p-3 rounded-md md:rounded-xl">
+              <button className="p-2 bg-white rounded-md md:p-3 md:rounded-xl">
                 <img
                   src="/Home/arrow.svg"
                   alt="arrow"
-                  className="w-5 h-5 md:w-6 md:h-6 object-cover hover:scale-75 transition duration-300"
+                  className="object-cover w-5 h-5 transition duration-300 md:w-6 md:h-6 hover:scale-75"
                 />
               </button>
             </div>
@@ -65,20 +65,17 @@ const Project2 = () => {
             <h2 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4 max-w-[400px]">
               WorldView — Explore the World, Anytime, Anywhere
             </h2>
-            <p className="text-gray-600 mb-4 text-sm">
-              A React web app utilizing various APIs, to provide comprehensive
-              country data and worldwide news. It features an intuitive
-              interface with curated country cards showcasing essential
-              information.
+            <p className="mb-4 text-sm text-gray-600">
+           A full-stack React app with authentication, allowing users to share travel stories, interact with an AI chatbot for country-related queries, and bookmark content—alongside curated country cards and live news powered by APIs in a clean, intuitive UI
             </p>
-            <p className="text-gray-600 text-sm ">
+            <p className="text-sm text-gray-600 ">
               Full Stack<span className="px-2">-</span> Aug 2024
             </p>
           </div>
         </div>
         <div className="flex-1 h-[350px] ">
           <img
-            src="/Project/Screenshot 2025-04-27 100333.png"
+            src="/Project/worlview.png"
             alt="Project"
             className="w-full h-[350px] object-cover rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none p-0"
           />

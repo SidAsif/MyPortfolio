@@ -7,10 +7,8 @@ const projects = [
     id: 1,
     name: "WorldView — Explore the World, Anytime, Anywhere",
     leftImg: "/Project/webicon.png",
-    mainImg: "/Project/Screenshot 2025-04-27 100333.png",
-    year: 2024,
-    // add project2 link here
-
+    mainImg: "public/Project/worlview.png",
+    year: 2025,
     link: "https://theworldviews.netlify.app/",
   },
   {
@@ -19,8 +17,6 @@ const projects = [
     leftImg: "/Project/webicon.png",
     mainImg: "/Project/utube (2).png",
     year: 2024,
-    // add project3 link here
-
     link: "https://utubecloned.netlify.app/",
   },
   {
@@ -29,8 +25,6 @@ const projects = [
     leftImg: "/Project/webicon.png",
     mainImg: "/Project/flappy.gif",
     year: 2024,
-    // add project3 link here
-
     link: "https://sidasif.github.io/Flappy_bird/",
   },
 ];
@@ -66,7 +60,7 @@ const TopProjects = () => {
         initial="hidden"
         animate={controls}
         variants={boxVariants}
-        className="flex flex-col md:flex-row gap-6"
+        className="flex flex-col gap-6 md:flex-row"
       >
         {projects.map((project) => (
           <motion.div
@@ -85,19 +79,19 @@ const TopProjects = () => {
 
               {/* Right Button */}
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <button className="bg-white p-2 rounded-md">
+                <button className="p-2 bg-white rounded-md">
                   <img
                     src="/Home/arrow.svg"
                     loading="lazy"
                     alt="arrow"
-                    className="w-5 h-5 object-cover hover:scale-75 transition duration-300"
+                    className="object-cover w-5 h-5 transition duration-300 hover:scale-75"
                   />
                 </button>
               </a>
             </div>
 
             <div className="mb-6">
-              <p className="text-lg md:text-xl font-semibold mb-2 ">
+              <p className="mb-2 text-lg font-semibold md:text-xl ">
                 {project.name}
               </p>
               <p className="text-sm text-gray-600">
@@ -111,7 +105,7 @@ const TopProjects = () => {
                 src={project.mainImg}
                 loading="lazy"
                 alt={`${project.name} main`}
-                className="h-full object-contain rounded-md"
+                className="object-contain h-full rounded-md"
               />
             </div>
           </motion.div>

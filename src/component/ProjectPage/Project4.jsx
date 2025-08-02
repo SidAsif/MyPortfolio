@@ -34,8 +34,8 @@ const Project4 = () => {
       variants={divVariants}
     >
       {/* Container */}
-      <div className="flex flex-col md:flex-row gap-6">
-        <div className="flex-1 relative px-8 pt-6">
+      <div className="flex flex-col gap-6 md:flex-row">
+        <div className="relative flex-1 px-8 pt-6">
           {/*add project link here*/}
           <a
             href="https://sidasif.github.io/Flappy_bird/"
@@ -43,11 +43,11 @@ const Project4 = () => {
             rel="noopener noreferrer"
           >
             <div className="absolute top-5 right-5">
-              <button className="bg-white p-2 md:p-3 rounded-md md:rounded-xl">
+              <button className="p-2 bg-white rounded-md md:p-3 md:rounded-xl">
                 <img
                   src="/Home/arrow.svg"
                   alt="arrow"
-                  className="w-5 h-5 md:w-6 md:h-6 object-cover hover:scale-75 transition duration-300"
+                  className="object-cover w-5 h-5 transition duration-300 md:w-6 md:h-6 hover:scale-75"
                 />
               </button>
             </div>
@@ -64,13 +64,14 @@ const Project4 = () => {
             <h2 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4 max-w-[400px]">
               FlappyBird - Tap, Fly, and Score!
             </h2>
-            <p className="text-gray-600 mb-4 text-sm">
-              A React web app utilizing various APIs, to provide comprehensive
-              country data and worldwide news. It features an intuitive
-              interface with curated country cards showcasing essential
-              information.
+            <p className="mb-4 text-sm text-gray-600">
+              A fun, addictive Flappy Bird clone built with smooth animations
+              and responsive controls. Tap to navigate through challenging
+              obstacles, earn high scores, and enjoy seamless gameplay across
+              devices. Designed for all screen sizes with a clean UI and
+              game-over logic
             </p>
-            <p className="text-gray-600 text-sm ">
+            <p className="text-sm text-gray-600 ">
               Responsive Frontend Design<span className="px-2">-</span> Jun 2023
             </p>
           </div>
@@ -79,7 +80,7 @@ const Project4 = () => {
           <img
             src="/Project/flappy.gif"
             alt="Project"
-            className="w-full h-full object-cover rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none  p-0"
+            className="object-cover w-full h-full p-0 rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none"
           />
         </div>
       </div>

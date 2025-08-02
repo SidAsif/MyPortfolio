@@ -34,16 +34,16 @@ const Project3 = () => {
       variants={divVariants}
     >
       {/* Container */}
-      <div className="flex flex-col md:flex-row gap-6">
+      <div className="flex flex-col gap-6 md:flex-row">
         <div className="flex-1 order-2 md:order-1 h-[350px]">
           <img
             src="/Project/utube (2).png"
             alt="Project"
-            className="w-full h-full object-cover rounded-b-3xl md:rounded-l-3xl md:rounded-br-none p-0"
+            className="object-cover w-full h-full p-0 rounded-b-3xl md:rounded-l-3xl md:rounded-br-none"
           />
         </div>
 
-        <div className="flex-1 relative px-6 pt-6 order-1 md:order-2">
+        <div className="relative flex-1 order-1 px-6 pt-6 md:order-2">
           {/*add project link here*/}
 
           <a
@@ -52,11 +52,11 @@ const Project3 = () => {
             rel="noopener noreferrer"
           >
             <div className="absolute top-5 right-5">
-              <button className="bg-white p-2 md:p-3 rounded-md md:rounded-xl">
+              <button className="p-2 bg-white rounded-md md:p-3 md:rounded-xl">
                 <img
                   src="/Home/arrow.svg"
                   alt="arrow"
-                  className="w-5 h-5 md:w-6 md:h-6 object-cover hover:scale-75 transition duration-300"
+                  className="object-cover w-5 h-5 transition duration-300 md:w-6 md:h-6 hover:scale-75"
                 />
               </button>
             </div>
@@ -74,13 +74,10 @@ const Project3 = () => {
             <h2 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4 max-w-[400px]">
               Utube - Your Ultimate Video Platform
             </h2>
-            <p className="text-gray-600 mb-4 text-sm">
-              A React web app utilizing various APIs, to provide comprehensive
-              country data and worldwide news. It features an intuitive
-              interface with curated country cards showcasing essential
-              information.
+            <p className="mb-4 text-sm text-gray-600">
+              A responsive video platform with Firebase authentication, supporting dark/light modes, full CRUD comments, and video browsing by country. Users can search, filter by category (e.g., gaming, sports), and engage with content—delivering a seamless and dynamic YouTube-like experience.
             </p>
-            <p className="text-gray-600 text-sm ">
+            <p className="text-sm text-gray-600 ">
               Full Stack<span className="px-2">-</span> Jun 2024
             </p>
           </div>

@@ -35,7 +35,7 @@ const MainProject = () => {
         initial="hidden"
         animate={controls}
         variants={boxVariant}
-        className="flex flex-col md:flex-row gap-6"
+        className="flex flex-col gap-6 md:flex-row"
       >
         {/* First box  */}
         <motion.div
@@ -46,7 +46,7 @@ const MainProject = () => {
             src="/Project/Screenshot 2025-04-27 100145.png"
             alt="Sample"
             loading="lazy"
-            className="w-full h-full object-cover rounded-3xl"
+            className="object-cover w-full h-full rounded-3xl"
           />
         </motion.div>
 
@@ -62,12 +62,12 @@ const MainProject = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="bg-white p-2 md:p-3 rounded-md md:rounded-xl ">
+              <button className="p-2 bg-white rounded-md md:p-3 md:rounded-xl ">
                 <img
                   src="/Home/arrow.svg"
                   alt="arrow"
                   loading="lazy"
-                  className="w-5 h-5 md:w-6 md:h-6 object-cover hover:scale-75 transition duration-300 "
+                  className="object-cover w-5 h-5 transition duration-300 md:w-6 md:h-6 hover:scale-75 "
                 />
               </button>
             </a>
@@ -82,11 +82,11 @@ const MainProject = () => {
                 className="w-10 h-10 mb-3"
               />
             </div>
-            <h2 className="text-xl md:text-3xl font-semibold mb-2 md:mb-6">
+            <h2 className="mb-2 text-xl font-semibold md:text-3xl md:mb-6">
               UniFinder - Your Ultimate Campus Companion
             </h2>
-            <p className="text-gray-600 text-sm md:text-base">
-              Interactive Web Project<span className="px-2">-</span> May 2020
+            <p className="text-sm text-gray-600 md:text-base">
+              Interactive Web Project<span className="px-2">-</span> May 2023
             </p>
           </div>
         </motion.div>
