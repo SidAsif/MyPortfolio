@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     name: "WorldView — Explore the World, Anytime, Anywhere",
     leftImg: "/Project/webicon.png",
-    mainImg: "public/Project/worlview.png",
+    mainImg: "/Project/worlview.png",
     year: 2025,
     link: "https://theworldviews.netlify.app/",
   },

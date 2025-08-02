@@ -8,8 +8,8 @@ export default function Project() {
   return (
     <div>
       <IntroWork />
-      <Project2 />
       <Project1 />
+      <Project2 />
       <Project3 />
       <Project4 />
     </div>

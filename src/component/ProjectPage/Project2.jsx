@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 const Project2 = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    threshold: 0.4,
+    threshold: 0.6,
   });
 
   useEffect(() => {
@@ -28,18 +28,18 @@ const Project2 = () => {
   return (
     <motion.div
       ref={ref}
-      className="max-w-[930px] lg:mx-auto  bg-[#F3F1FB]  rounded-3xl my-6 mx-6 "
+      className="max-w-[930px] lg:mx-auto bg-[#F3F1FB]  rounded-3xl my-6 mx-6"
       initial="hidden"
       animate={controls}
       variants={divVariants}
     >
       {/* Container */}
       <div className="flex flex-col gap-6 md:flex-row">
-        <div className="relative flex-1 px-8 pt-6">
+        {/* Content */}
+        <div className="relative flex-1 px-6 pt-6 md:order-2">
           {/*add project link here*/}
-
           <a
-            href="https://theworldviews.netlify.app/"
+            href="https://unifinderr.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -53,7 +53,6 @@ const Project2 = () => {
               </button>
             </div>
           </a>
-          {/* Content */}
           <div className="mt-10">
             <div>
               <img
@@ -63,21 +62,26 @@ const Project2 = () => {
               />
             </div>
             <h2 className="text-xl md:text-2xl font-semibold mb-2 md:mb-4 max-w-[400px]">
-              WorldView — Explore the World, Anytime, Anywhere
+              UniFinder - Your Ultimate Campus Companion
             </h2>
             <p className="mb-4 text-sm text-gray-600">
-           A full-stack React app with authentication, allowing users to share travel stories, interact with an AI chatbot for country-related queries, and bookmark content—alongside curated country cards and live news powered by APIs in a clean, intuitive UI
+              A web app aiding users in exploring nearby amenities and services
+              around the Integral University campus. From top eateries to nearby
+              hostels, it's your one-stop platform for essential local
+              information.
             </p>
             <p className="text-sm text-gray-600 ">
-              Full Stack<span className="px-2">-</span> Aug 2024
+              Full Stack<span className="px-2">-</span> May 2024
             </p>
           </div>
         </div>
-        <div className="flex-1 h-[350px] ">
+
+        {/* Image */}
+        <div className="flex-1 order-2  h-[350px]">
           <img
-            src="/Project/worlview.png"
+            src="/Project/Screenshot 2025-04-27 100145.png"
             alt="Project"
-            className="w-full h-[350px] object-cover rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none p-0"
+            className="object-cover w-full h-full p-0 rounded-b-3xl md:rounded-r-3xl md:rounded-bl-none"
           />
         </div>
       </div>
