@@ -25,7 +25,7 @@ const projects = [
     leftImg: "/Project/webicon.png",
     mainImg: "/Project/TailwindSight.png",
     year: 2025,
-    link: "https://sidasif.github.io/Flappy_bird/",
+    link: "https://github.com/SidAsif/TailwindSight",
   },
 ];
 
