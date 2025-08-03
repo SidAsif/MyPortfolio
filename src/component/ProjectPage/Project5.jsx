@@ -46,7 +46,11 @@ const Project5 = () => {
         <div className="relative flex-1 px-6 pt-6 md:order-1">
           {/*add project link here*/}
 
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/SidAsif/TailwindSight"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="absolute top-5 right-5">
               <button className="p-2 bg-white rounded-md md:p-3 md:rounded-xl">
                 <img
