@@ -1,8 +1,10 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import { useNavigate } from "react-router-dom";
 
 const SocialMedia = () => {
+  const navigate = useNavigate();
   const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.4,
@@ -25,24 +27,42 @@ const SocialMedia = () => {
       },
     },
   };
-
+  const handleOpen = () => {
+    window.open("/AsifSidResume.pdf", "_blank");
+  };
   return (
     <div className="max-w-[980px] mx-auto px-6 py-7">
       {/* Container for all boxes */}
-      <div className="flex flex-col md:flex-row gap-6" ref={ref}>
+      <div className="flex flex-col gap-6 md:flex-row" ref={ref}>
         {/* First box - PDF viewer */}
         <motion.div
           variants={boxVariants}
           initial="hidden"
           animate={controls}
           whileInView="visible"
-          className="bg-[#F3F1FB]  flex-[2] rounded-3xl mb-6 md:mb-0 overflow-hidden"
+          className="bg-[#23232a] rounded-3xl mb-6 md:mb-0 overflow-hidden flex flex-col items-center justify-center p-6
+                 w-full  sm:max-w-md md:max-w-lg "
         >
-          <iframe
-            src="/AsifSidResume.pdf#toolbar=0&navpanes=0&scrollbar=0"
-            title="Resume PDF"
-            className="w-full h-[350px] rounded-lg"
-          ></iframe>
+          <div className="flex flex-col items-center">
+            {/* PDF icon or placeholder */}
+            <svg
+              className="w-16 h-16 mb-4 opacity-60"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M..." />
+            </svg>
+            <span className="mb-4 text-xl font-medium text-white">
+              AsifSidResume.pdf
+            </span>
+            <button
+              onClick={handleOpen}
+              className="bg-[#A5B4FC] text-[#23232a] px-8 py-3 rounded-lg font-bold transition hover:bg-[#818cf8]"
+            >
+              Open
+            </button>
+          </div>
         </motion.div>
 
         {/* Second social box */}
@@ -66,7 +86,7 @@ const SocialMedia = () => {
                   src="/Home/Insta.png"
                   loading="lazy"
                   alt="Image 1"
-                  className="w-full h-full object-cover rounded-3xl hover:scale-105 transition duration-300"
+                  className="object-cover w-full h-full transition duration-300 rounded-3xl hover:scale-105"
                 />
               </div>
             </motion.a>
@@ -83,7 +103,7 @@ const SocialMedia = () => {
                   src="/Home/whatsapp.png"
                   alt="WhatsApp"
                   loading="lazy"
-                  className="w-full h-full object-cover rounded-3xl hover:scale-105 transition duration-300"
+                  className="object-cover w-full h-full transition duration-300 rounded-3xl hover:scale-105"
                 />
               </div>
             </motion.a>
@@ -100,7 +120,7 @@ const SocialMedia = () => {
                   src="/Home/LinkedIn_logo.png"
                   alt="Image 2"
                   loading="lazy"
-                  className="w-full h-full object-cover rounded-3xl  hover:scale-105 transition duration-300"
+                  className="object-cover w-full h-full transition duration-300 rounded-3xl hover:scale-105"
                 />
               </div>
             </motion.a>
@@ -117,7 +137,7 @@ const SocialMedia = () => {
                   src="/Home/github.png"
                   alt="Image 3"
                   loading="lazy"
-                  className="w-full h-full object-cover rounded-3xl  hover:scale-105 transition duration-300"
+                  className="object-cover w-full h-full transition duration-300 rounded-3xl hover:scale-105"
                 />
               </div>
             </motion.a>

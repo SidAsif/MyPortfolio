@@ -50,7 +50,7 @@ const Education = () => {
     <div ref={ref} className="max-w-[980px] mx-auto px-6 pt-6">
       {/* Container */}
       <motion.div
-        className="flex flex-col md:flex-row gap-6"
+        className="flex flex-col gap-6 md:flex-row"
         initial="hidden"
         animate={controls}
         variants={boxVariant}
@@ -61,17 +61,17 @@ const Education = () => {
           variants={boxVariant}
         >
           <div className="flex items-center mb-4">
-            <div className="w-14 h-14 rounded-full bg-black flex items-center justify-center mr-4">
+            <div className="flex items-center justify-center mr-4 bg-black rounded-full w-14 h-14">
               <img
                 src="/Home/userAvatar.png"
                 alt="Profile"
                 loading="lazy"
-                className="w-10 h-10 rounded-full object-contain"
+                className="object-contain w-10 h-10 rounded-full"
               />
             </div>
           </div>
-          <h2 className="text-xl md:text-2xl font-bold mb-3">How I Got Here</h2>
-          <p className="text-[#616161] text-sm font-normal leading-relaxed">
+          <h2 className="mb-3 text-xl font-bold md:text-2xl">How I Got Here</h2>
+          <p className="text-[#616161] text-sm font-normal leading-relaxed text-justify">
             I completed my high school and intermediate in my hometown, Deoria,
             before pursuing a Bachelor's in Computer Science at Integral
             University. Starting with no coding knowledge, it was challenging,
@@ -86,17 +86,17 @@ const Education = () => {
           className="flex-1 p-5 md:p-8 bg-[#F3F1FB]  rounded-3xl"
           variants={boxVariant}
         >
-          <h2 className="text-xl md:text-2xl font-bold mb-8 pt-3">
+          <h2 className="pt-3 mb-8 text-xl font-bold md:text-2xl">
             My Education
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             {educationData.map((education, index) => (
               <div key={index} className="flex items-start mb-6">
                 <img
                   src={education.imgSrc}
                   alt="Education"
                   loading="lazy"
-                  className="w-10 h-10 object-cover rounded-md mr-5"
+                  className="object-cover w-10 h-10 mr-5 rounded-md"
                 />
                 <div>
                   <h3 className="font-semibold mb-1.5">{education.degree}</h3>

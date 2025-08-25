@@ -24,7 +24,7 @@ const experiences = [
     company: "Freelance",
     position: "Full Stack Developer",
     description:
-      "Built and delivered 3 full-stack web projects and one Shopify-based eCommerce solution, handling both frontend and backend development.",
+      "Designed and developed 3 full-stack applications and a Shopify store, ensuring seamless user experience and robust backend systems.",
     duration: "Mar 2024 - Current",
     image: "/Home/freelancer.png",
   },
@@ -108,7 +108,7 @@ const MyExperience = () => {
                       {exp.duration}
                     </p>
                   </div>
-                  <p className="text-sm text-[#616161] font-thicccboi pt-1">
+                  <p className="text-sm text-[#616161] font-thicccboi pt-1 text-justify">
                     {exp.description}
                   </p>
                 </div>
